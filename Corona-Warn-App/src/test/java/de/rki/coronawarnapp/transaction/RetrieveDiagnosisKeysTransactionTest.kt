@@ -64,7 +64,7 @@ class RetrieveDiagnosisKeysTransactionTest {
 
     @Test
     fun testTransactionHasFiles() {
-        val file = Paths.get("src", "test", "resources", "keys.bin").toFile()
+        val file = Paths.get("src", "de/rki/coronawarnapp/ui/test", "resources", "keys.bin").toFile()
 
         coEvery { RetrieveDiagnosisKeysTransaction["executeFetchKeyFilesFromServer"](any<Date>()) } returns listOf(
             file

@@ -2,6 +2,9 @@ package de.rki.coronawarnapp.ui.main
 
 import android.content.Intent
 import android.os.Bundle
+import android.webkit.WebResourceRequest
+import android.webkit.WebView
+import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
@@ -10,6 +13,7 @@ import de.rki.coronawarnapp.R
 import de.rki.coronawarnapp.ui.viewmodel.SettingsViewModel
 import de.rki.coronawarnapp.util.ConnectivityHelper
 import de.rki.coronawarnapp.worker.BackgroundWorkScheduler
+import kotlinx.android.synthetic.main.fragment_test.*
 
 /**
  * This activity holds all the fragments (except onboarding) and also registers a listener for
