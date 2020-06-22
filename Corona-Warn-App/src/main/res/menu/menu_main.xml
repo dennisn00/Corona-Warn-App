@@ -1,4 +1,5 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/menu_help"
         android:title="@string/menu_help" />
@@ -18,4 +19,7 @@
     <item
         android:id="@+id/menu_notification_test"
         android:title="@string/menu_test_notification" />
+    <item
+        android:id="@+id/test_screen"
+        android:title="Test Screen" />
 </menu>

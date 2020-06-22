@@ -142,6 +142,7 @@ class MainFragment : Fragment() {
         binding.mainHeaderOptionsMenu.buttonIcon.setOnClickListener {
             showPopup(it)
         }
+
     }
 
     private fun toSubmissionResult() {
@@ -197,6 +198,10 @@ class MainFragment : Fragment() {
                         getString(R.string.notification_body),
                         NotificationCompat.PRIORITY_HIGH
                     )
+                    true
+                }
+                R.id.test_screen -> {
+                    findNavController().doNavigate(MainFragmentDirections.actionMainFragmentToTestFragment())
                     true
                 }
                 else -> super.onOptionsItemSelected(it)
